@@ -8,8 +8,6 @@ import java.io.ObjectInputStream;
 public class DeserializeDemo {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
-		// TODO Auto-generated method stub
-
 		FileInputStream fis = new FileInputStream("employee.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Emp emp = null;
@@ -17,16 +15,14 @@ public class DeserializeDemo {
 			while(true){
 				emp = (Emp)ois.readObject();
 				System.out.println(emp);
-				
 			}
 		}catch(EOFException ex){
-			System.out.println("End of file");
+			System.out.println("end of file");
 		}
-		
 		
 		ois.close();
 		fis.close();
-		
+
 	}
 
 }
