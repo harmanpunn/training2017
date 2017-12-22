@@ -13,13 +13,19 @@ public class Demo2 {
 	public static void main(String[] args) {
 
 		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(2005, "vikas");
+		map.put(2008, "rahul");
+		map.put(2010, "puneet");
+		map.put(3003, "kashish");
 		map.put(1005, "ram");
 		map.put(1003, "sam");
 		map.put(1007, "tom");
 		map.put(1008, "rohan");
 		map.put(1002, "tommy");
 		map.put(1003, "janit"); // replace the duplicates
-		map.put(null, "yolo");
+		map.put(null, "yolo");  // HashMap can have null key. Hashtable cannot have null key.
+		map.put(3008, "teja");
+		map.put(3007, "tejasva");
 
 		System.out.println("Iterating using keySet()");
 		Set<Integer> set = map.keySet();
